@@ -12,6 +12,11 @@ module.exports = {
     modulesDirectories: [ 'web_modules', 'node_modules', 'src', 'lib', __dirname ]
   },
 
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  },
+
   module: {
     loaders: [{
       test    : /\.jsx*$/,
